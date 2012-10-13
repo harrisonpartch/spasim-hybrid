@@ -1,0 +1,12 @@
+
+echo "options ipv6 disable=1" >> /etc/modprobe.d/disable-ipv6.conf
+
+reboot
+
+==> Internet is no longer reachable, so IPv6 is definitely disabled.
+
+{P cpuid= 0, pid= -292586640 UDPChatServer: server started on port: 1400}
+Sockets.SendTo: Invalid argument
+
+Perhaps IPv4 isn't working -- in fact, since I can't reach the internet, something definitely is broken -- so this isn't really a sufficient test
+of your hypothesis -- I will try to disable IPv6 in such a way that IPv4 works.

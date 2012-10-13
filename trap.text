@@ -1,0 +1,90 @@
+nixAos (0.97/r4200) for Linux
+
+Trap   11 (Segmentation violation)
+SP = 00000000H, FP = EECBDC8CH, PC = F0CF47BCH
+
+FoxSyntaxTree.Scope.FindSymbol:48 pc=25108 [00006214H] = 25060 + 48
+  identifier=4773 (000012A5H)
+  p=0000003CH (NIL)
+State FoxSyntaxTree:
+  invalidIdentifier=-1
+  invalidQualifiedIdentifier=F0D168C0H (FoxSyntaxTree.Type)
+  invalidType=F0D16880H (FoxSyntaxTree.Type)
+  invalidExpression=F0D16900H (FoxSyntaxTree.Type)
+  invalidDesignator=F0D16760H (FoxSyntaxTree.QualifiedIdentifier)
+  invalidValue=F0D16780H (FoxSyntaxTree.Type)
+  invalidSymbol=F0D167C0H (FoxSyntaxTree.Designator)
+  anonymousIdentifier=-254711872
+  importType=F0D16800H (FoxSyntaxTree.Value)
+  typeDeclarationType=F0D16840H (FoxSyntaxTree.Symbol)
+  moduleType=00000000H (NIL)
+  indexListSeparator=F0D16940H (FoxSyntaxTree.Designator)
+FoxSemanticChecker.Checker.Find:64 pc=1113 [00000459H] = 1049 + 64
+  inScope=F1ADAFE0H (FoxSyntaxTree.ModuleScope)
+  name=4773 (000012A5H)
+  traverse=FALSE
+  scope=F1ADAFE0H (FoxSyntaxTree.ModuleScope)
+  baseScope=00000000H (NIL)
+  symbol=00000000H (NIL)
+  ownerRecord=00000000H (NIL)
+  base=00000000H (NIL)
+FoxSemanticChecker.Checker.VisitSelectorDesignator:980 pc=56743 [0000DDA7H] = 55763 + 980
+  selectorDesignator=F2225760H (FoxSyntaxTree.SelectorDesignator)
+  symbol=00000000H (NIL)
+  left=F07828A0H (FoxSyntaxTree.SymbolDesignator)
+  scope=F1ADAFE0H (FoxSyntaxTree.ModuleScope)
+  module=F1ADB060H (FoxSyntaxTree.Module)
+  result=F0D167C0H (FoxSyntaxTree.Designator)
+  type=00000000H (NIL)
+FoxSyntaxTree.SelectorDesignator.Accept:33 pc=15064 [00003AD8H] = 15031 + 33
+  v=F2211320H (FoxSemanticChecker.Checker)
+  position=7761 (00001E51H)
+FoxSemanticChecker.Checker.ResolveExpression:107 pc=94425 [000170D9H] = 94318 + 107
+  expression=F2225760H (FoxSyntaxTree.SelectorDesignator)
+  result=00000000H (NIL)
+  prev=F0D167C0H (FoxSyntaxTree.Designator)
+FoxSemanticChecker.Checker.ExpressionList:103 pc=65024 [0000FE00H] = 64921 + 103
+  expressionList=F22256A0H (FoxSyntaxTree.ExpressionList)
+  i=0
+  expression=00000000H (NIL)
+  result=TRUE
+  @hiddenIRVar61=0
+  @hiddenIRVar62=F2225760H (FoxSyntaxTree.SelectorDesignator)
+FoxSemanticChecker.Checker.VisitParameterDesignator:110 pc=92121 [000167D9H] = 92011 + 110
+  designator=F22257A0H (FoxSyntaxTree.ParameterDesignator)
+  parameters=F22256A0H (FoxSyntaxTree.ExpressionList)
+  left=F0782860H (FoxSyntaxTree.SymbolDesignator)
+  result=F0D167C0H (FoxSyntaxTree.Designator)
+  expression=00000000H (NIL)
+  typeDeclaration=00000000H (NIL)
+  @hiddenIRVar95=00000000H (NIL)
+  @hiddenIRVar96=00000000H (NIL)
+FoxSyntaxTree.ParameterDesignator.Accept:33 pc=15148 [00003B2CH] = 15115 + 33
+  v=F2211320H (FoxSemanticChecker.Checker)
+  position=7756 (00001E4CH)
+FoxSemanticChecker.Checker.ResolveExpression:107 pc=94425 [000170D9H] = 94318 + 107
+  expression=F22257A0H (FoxSyntaxTree.ParameterDesignator)
+  result=00000000H (NIL)
+  prev=00000000H (NIL)
+FoxSemanticChecker.Checker.ResolveDesignator:51 pc=53543 [0000D127H] = 53492 + 51
+  d=F22257A0H (FoxSyntaxTree.ParameterDesignator)
+  result=00000000H (NIL)
+  resolved=00000000H (NIL)
+FoxSemanticChecker.Checker.VisitProcedureCallStatement:166 pc=104511 [0001983FH] = 104345 + 166
+  procedureCall=F22257E0H (FoxSyntaxTree.ProcedureCallStatement)
+  call=F22257A0H (FoxSyntaxTree.ParameterDesignator)
+  @hiddenIRVar101=00000000H (NIL)
+FoxSyntaxTree.ProcedureCallStatement.Accept:33 pc=21066 [0000524AH] = 21033 + 33
+  v=F2211320H (FoxSemanticChecker.Checker)
+  position=7756 (00001E4CH)
+FoxSemanticChecker.Checker.ResolveStatement:88 pc=104146 [000196D2H] = 104058 + 88
+  x=F22257E0H (FoxSyntaxTree.ProcedureCallStatement)
+  prev=00000000H (NIL)
+  resolved=00000000H (NIL)
+FoxSemanticChecker.Checker.StatementSequence:111 pc=104292 [00019764H] = 104181 + 111
+  statementSequence=F222A120H (FoxSyntaxTree.StatementSequence)
+  i=7 (00000007H)
+  statement=F22257E0H (FoxSyntaxTree.ProcedureCallStatement)
+  resolved=F2225600H (FoxSyntaxTree.ProcedureCallStatement)
+  @hiddenIRVar100=29 (0000001DH)
+F
